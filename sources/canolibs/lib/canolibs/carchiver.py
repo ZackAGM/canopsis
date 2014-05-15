@@ -72,6 +72,14 @@ class carchiver(object):
 			# Get old record
 			#record = self.storage.get(_id, account=self.account)
 			change_fields = {'state': 1, 'state_type': 1, 'last_state_change': 1, 'perf_data_array': 1, 'output': 1, 'timestamp': 1}
+
+			if event['event_type'] == 'calendar':
+				change_fields['rrule'] = 1
+				change_fields['start'] = 1
+				change_fields['end'] = 1
+				change_fields['all_day'] = 1
+				change_fields['output'] = 1
+
 			devent = self.collection.find_one(_id, fields=change_fields)
 			self.logger.debug(" + Check with old record:")
 			old_state = devent['state']
