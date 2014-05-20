@@ -229,6 +229,14 @@ Ext.define('widgets.eventcalendar.eventcalendar' , {
 			if(calevents[i].rrule !== null && calevents[i].rrule !== undefined)
 				event_raw.rrule = calevents[i].rrule;
 
+			if(calevents[i].visibility === undefined) {
+				calevents[i].visibility = "shown"
+			}
+
+			if(calevents[i].rrule === undefined) {
+				calevents[i].rrule = "";
+			}
+			
 			log.debug("publish event from calendar", this.logAuthor);
 			log.dump(event_raw);
 			this.publishEvent('events', event_raw, false);
