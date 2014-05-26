@@ -229,12 +229,12 @@ Ext.define('widgets.eventcalendar.eventcalendar' , {
 			if(calevents[i].rrule !== null && calevents[i].rrule !== undefined)
 				event_raw.rrule = calevents[i].rrule;
 
-			if(calevents[i].visibility === undefined) {
-				calevents[i].visibility = "shown"
+			if(event_raw.visibility === undefined) {
+				event_raw.visibility = "shown"
 			}
 
-			if(calevents[i].rrule === undefined) {
-				calevents[i].rrule = "";
+			if(event_raw.rrule === undefined) {
+				event_raw.rrule = "";
 			}
 			
 			log.debug("publish event from calendar", this.logAuthor);
@@ -247,9 +247,6 @@ Ext.define('widgets.eventcalendar.eventcalendar' , {
 	 * @see cwebsocketWidget
 	 */
 	on_event: function(raw, rk) {
-		log.debug("["+ this.wcontainer.id +"] on_event");
-		log.dump(rk);
-		log.dump(raw);
 
 		var me = this;
 
