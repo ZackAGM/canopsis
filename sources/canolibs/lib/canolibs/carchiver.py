@@ -79,6 +79,7 @@ class carchiver(object):
 				change_fields['end'] = 1
 				change_fields['all_day'] = 1
 				change_fields['output'] = 1
+				change_fields['visibility'] = 1
 
 			devent = self.collection.find_one(_id, fields=change_fields)
 			self.logger.debug(" + Check with old record:")
