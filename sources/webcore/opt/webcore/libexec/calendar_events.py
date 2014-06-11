@@ -57,6 +57,10 @@ def cal_get(source, interval_start, interval_end):
 				{"$and": [
 							{"end": {"$gt": int(interval_start)}},
 							{"end": {"$lt": int(interval_end)}}
+						]},
+				{"$and": [
+							{"start": {"$lt": int(interval_start)}},
+							{"end": {"$gt": int(interval_end)}}
 						]}
 			]}
 		]
