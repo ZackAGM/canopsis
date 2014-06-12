@@ -398,12 +398,10 @@ class manager(object):
 				self.logger.debug('Impossible to create gridfs bin {} because it exists'.format(fe))
 
 			self.logger.debug("   + Add bin_id in meta and clean meta")
-			##ofts = dca.get('fts', fts)
-			##self.store.update(_id=_id, mset={'fts': ofts, 'd': []}, mpush={'c': (fts, lts, bin_id)})
 
 			perfdata = self.store.get(_id=_id)
 			to_push = [fts, lts, bin_id]
-			if to_push not in perfdata['c']:
+			if 'c' in perfdata and to_push not in perfdata['c']:
 				self.store.update(_id=_id, mpush={'c': (fts, lts, bin_id)})
 
 			self.store.redis.delete(_id)
@@ -411,10 +409,6 @@ class manager(object):
 		except Exception,err:
 			self.logger.warning('Impossible to rotate %s: %s' % (_id, err))
 			self.logger.error(traceback.format_exc())
-		#else:
-		#	self.logger.debug("  + Not enough point in DCA")
-		#	ofts = dca.get('fts', fts)
-		#	self.store.update(_id=_id, mset={'fts': ofts})
 
 		t = time.time() - t
 		self.logger.debug(" + Rotation of '%s' done in %.3f seconds" % (_id, t))
