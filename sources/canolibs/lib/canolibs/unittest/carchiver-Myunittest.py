@@ -35,7 +35,8 @@ class KnownValues(unittest.TestCase):
 	def test_01_Init(self):
 		global ARCHIVER
 		ARCHIVER = carchiver(namespace='unittest',  autolog=True, logging_level=logging.DEBUG)
-		ARCHIVER.remove_all()
+		ARCHIVER.storage.drop_namespace('unittest')
+		ARCHIVER.storage.drop_namespace('unittest')
 
 	def test_02_Check(self):
 		event = { 'state': 0, 'state_type': 1 }
