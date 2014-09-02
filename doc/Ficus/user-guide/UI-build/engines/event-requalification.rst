@@ -1,4 +1,4 @@
-﻿.. include:: /Ficus/includes/links.rst
+﻿.. include:: ../../../includes/links.rst
 
 Event Requalification
 =====================
@@ -83,6 +83,6 @@ See |Ficus_derogation| .
 In the tab "Requalificate", you will see the list of all your *state
 maps*, just select the one you want.
 
-.. |image1| image:: /Ficus/images/requalification/menu_statemap_manager.png
-.. |image2| image:: /Ficus/images/requalification/statemap_manager.png
-.. |image3| image:: /Ficus/images/requalification/add_statemap.png
+.. |image1| image:: ../../../images/requalification/menu_statemap_manager.png
+.. |image2| image:: ../../../images/requalification/statemap_manager.png
+.. |image3| image:: ../../../images/requalification/add_statemap.png

@@ -1,4 +1,4 @@
-﻿.. include:: /Ficus/includes/links.rst
+﻿.. include:: ../../../includes/links.rst
 
 .. _Ficus_event-filter:
 
@@ -60,7 +60,7 @@ _____
 
 The tab "rule" defines how an event is chosen by the filter in edition.
 
-.. |image1| image:: /Ficus/images/filter/filter_menu.png
-.. |image2| image:: /Ficus/images/filter/filter_view.png
-.. |image3| image:: /Ficus/images/filter/filter_options.png
-.. |image4| image:: /Ficus/images/filter/filter_rule.png
+.. |image1| image:: ../../../images/filter/filter_menu.png
+.. |image2| image:: ../../../images/filter/filter_view.png
+.. |image3| image:: ../../../images/filter/filter_options.png
+.. |image4| image:: ../../../images/filter/filter_rule.png

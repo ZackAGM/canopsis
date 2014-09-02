@@ -31,13 +31,13 @@ Time graph widget allows to plot metrics representation over time. Y axis repres
 
 
 .. [#f1] timegraph_series_typess types
-.. image:: /Ficus/images/widgets/timegraph_series_types.png
+.. image:: ../../../images/widgets/timegraph_series_types.png
 
 .. [#f2] markers
-.. image:: /Ficus/images/widgets/timegraph_markers.png
+.. image:: ../../../images/widgets/timegraph_markers.png
 
 .. [#f3] stacked option
-.. image:: /Ficus/images/widgets/timegraph_stacked.png
+.. image:: ../../../images/widgets/timegraph_stacked.png
 
 .. [#f4] history navigation
-.. image:: /Ficus/images/widgets/timegraph_history_navigation.png
+.. image:: ../../../images/widgets/timegraph_history_navigation.png

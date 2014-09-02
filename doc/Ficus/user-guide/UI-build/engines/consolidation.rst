@@ -172,9 +172,9 @@ ___
 
 Select the sum value.
 
-.. |image1| image:: /Ficus/images/consolidation/consolidation.png
-.. |image2| image:: /Ficus/images/consolidation/consolidation_menu.png
-.. |image3| image:: /Ficus/images/consolidation/consolidation_view.png
-.. |image4| image:: /Ficus/images/consolidation/consolidation_options.png
-.. |image5| image:: /Ficus/images/consolidation/consolidation_consolidation.png
-.. |image6| image:: /Ficus/images/consolidation/consolidation_filter.png
+.. |image1| image:: ../../../images/consolidation/consolidation.png
+.. |image2| image:: ../../../images/consolidation/consolidation_menu.png
+.. |image3| image:: ../../../images/consolidation/consolidation_view.png
+.. |image4| image:: ../../../images/consolidation/consolidation_options.png
+.. |image5| image:: ../../../images/consolidation/consolidation_consolidation.png
+.. |image6| image:: ../../../images/consolidation/consolidation_filter.png

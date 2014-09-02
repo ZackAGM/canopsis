@@ -1,4 +1,4 @@
-﻿.. include:: /Ficus/includes/links.rst
+﻿.. include:: ../../../includes/links.rst
 
 Engines
 =======
@@ -178,4 +178,4 @@ Others
 +-------------------+------------------------------------------------+------+------+
 
 
-.. |image1| image:: /Ficus/images/engine/Engines_map.png
+.. |image1| image:: ../../../images/engine/Engines_map.png
